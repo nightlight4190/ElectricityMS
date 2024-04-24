@@ -88,6 +88,7 @@ class WelcomePage extends StatelessWidget {
                       width: 40,
                     ),
                     InkWell(
+                      borderRadius: BorderRadius.circular(20),
                       onTap: () {},
                       child: Text(
                         'Sign in',
@@ -124,15 +125,19 @@ class WelcomePage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 60,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 140, top: 80, bottom: 100),
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.topLeft,
+            // SizedBox(
+            //   height: 60,
+            // ),
+            Stack(
+              children: [
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      left: 140,
+                      top: 100,
+                      bottom: 20,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -176,7 +181,7 @@ class WelcomePage extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 40,
+                          height: 120,
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.min,
@@ -210,18 +215,42 @@ class WelcomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                ],
-              ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 80, bottom: 45),
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      height: 450,
+                      width: 750,
+                      child: Image.network(
+                        'https://cdn.dribbble.com/users/3036385/screenshots/16754971/media/777d36ff7f589d993bc5ad40a0e825b6.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text('Term Of Use'),
+                SizedBox(
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(20),
+                    onTap: () {},
+                    child: Text('Term of Use'),
+                  ),
+                ),
                 SizedBox(
                   width: 40,
                 ),
-                Text('Privacy Policy'),
+                InkWell(
+                  borderRadius: BorderRadius.circular(20),
+                  onTap: () {},
+                  child: Text('Privacy Policy'),
+                ),
                 SizedBox(
                   width: 40,
                 ),

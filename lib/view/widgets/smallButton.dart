@@ -1,47 +1,39 @@
 // ignore: must_be_immutable
 import 'package:flutter/material.dart';
+import 'package:intern_project/view/util/colors.dart';
 
 // ignore: must_be_immutable
 class smallButton extends StatelessWidget {
-  Color? boxColor;
-  Color? txtColor;
-  double radius;
   double? height;
   double? width;
-  String content;
-  double fntSize;
+  String btnName;
   smallButton({
     super.key,
-    this.txtColor,
-    this.boxColor,
-    required this.radius,
-    this.height,
     this.width,
-    required this.content,
-    required this.fntSize,
+    required this.btnName,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(radius),
+      borderRadius: BorderRadius.circular(20),
       onTap: () {
         // Handle onTap
       },
       child: Container(
-        height: height,
+        height: 35,
         width: width,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(radius),
-          color: boxColor,
+          borderRadius: BorderRadius.circular(20),
+          color: navyBlue,
         ),
         child: Center(
           child: Text(
-            content,
+            btnName,
             style: TextStyle(
               fontWeight: FontWeight.w500,
-              fontSize: fntSize,
-              color: txtColor,
+              fontSize: 14,
+              color: babyBlue,
             ),
           ),
         ),

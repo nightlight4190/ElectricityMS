@@ -187,12 +187,7 @@ class WelcomePage extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             smallButton(
-                              content: 'GET STARTED',
-                              radius: 20,
-                              fntSize: 14,
-                              boxColor: navyBlue,
-                              txtColor: babyBlue,
-                              height: 35,
+                              btnName: 'GET STARTED',
                               width: 120,
                             ),
                             SizedBox(

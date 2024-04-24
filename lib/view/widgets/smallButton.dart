@@ -15,26 +15,20 @@ class smallButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(20),
-      onTap: () {
-        // Handle onTap
-      },
-      child: Container(
-        height: 35,
-        width: width,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: navyBlue,
-        ),
-        child: Center(
-          child: Text(
-            btnName,
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 14,
-              color: babyBlue,
-            ),
+    return Container(
+      height: 35,
+      width: width,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: navyBlue,
+      ),
+      child: Center(
+        child: Text(
+          btnName,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 14,
+            color: babyBlue,
           ),
         ),
       ),

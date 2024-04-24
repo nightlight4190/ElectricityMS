@@ -186,9 +186,13 @@ class WelcomePage extends StatelessWidget {
                         Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            smallButton(
-                              btnName: 'GET STARTED',
-                              width: 120,
+                            InkWell(
+                              borderRadius: BorderRadius.circular(20),
+                              onTap: () {},
+                              child: smallButton(
+                                btnName: 'GET STARTED',
+                                width: 120,
+                              ),
                             ),
                             SizedBox(
                               width: 10,

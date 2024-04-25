@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:intern_project/view/util/colors.dart';
+import 'package:intern_project/view/util/language.dart';
 import 'package:intern_project/view/widgets/smallButton.dart';
 
-class WelcomePage extends StatelessWidget {
+class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
 
+  @override
+  State<WelcomePage> createState() => _WelcomePageState();
+}
+
+class _WelcomePageState extends State<WelcomePage> {
+  String selectedLanguage = 'English';
   @override
   Widget build(BuildContext context) {
     var textStyle = TextStyle(
@@ -70,18 +77,64 @@ class WelcomePage extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Text(
-                      'English',
-                      style: textStyle2,
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    InkWell(
-                      onTap: () {},
-                      child: Icon(
-                        Icons.keyboard_arrow_down,
-                        size: 20,
+                    Center(
+                      child: InkWell(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: Text(
+                                  'Select Language',
+                                  // style: textStyle2,
+                                ),
+                                content: SizedBox(
+                                  width: double.minPositive,
+                                  child: ListView(
+                                    shrinkWrap: true,
+                                    children: [
+                                      for (var language in languages)
+                                        ListTile(
+                                          title: Text(language),
+                                          onTap: () {
+                                            setState(() {
+                                              selectedLanguage = language;
+                                            });
+                                            Navigator.of(context).pop();
+                                          },
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                                actions: <Widget>[
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: Text('Close'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                        },
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.keyboard_arrow_down,
+                              size: 20,
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              selectedLanguage,
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                              ),
+                            ), // Show selected language
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -220,10 +273,10 @@ class WelcomePage extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.topRight,
                     child: Container(
-                      height: 450,
-                      width: 750,
-                      child: Image.network(
-                        'https://cdn.dribbble.com/users/3036385/screenshots/16754971/media/777d36ff7f589d993bc5ad40a0e825b6.png',
+                      height: MediaQuery.of(context).size.height * .55,
+                      width: MediaQuery.of(context).size.width * .50,
+                      child: Image.asset(
+                        'assets/image/dashboard.png',
                         fit: BoxFit.cover,
                       ),
                     ),

@@ -17,7 +17,7 @@ class smallButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 35,
-      width: width,
+      width: MediaQuery.of(context).size.width * 0.1,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: navyBlue,

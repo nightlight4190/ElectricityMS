@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'view/screens/welcome.dart';
+import 'package:intern_project/view/screens/signIn/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Rubik',
       ),
-      home: WelcomePage(),
+      home: ProfilePage(),
     );
   }
 }

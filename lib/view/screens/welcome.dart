@@ -227,9 +227,10 @@ class _WelcomePageState extends State<WelcomePage> {
                               "analyze, store and share energy usage and power\n"
                               "quality data across your whole enterprise.",
                               style: TextStyle(
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 15,
-                                  color: Colors.black54),
+                                fontWeight: FontWeight.w300,
+                                fontSize: 15,
+                                color: Colors.black54,
+                              ),
                             ),
                           ],
                         ),
@@ -273,8 +274,10 @@ class _WelcomePageState extends State<WelcomePage> {
                   child: Align(
                     alignment: Alignment.topRight,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * .55,
-                      width: MediaQuery.of(context).size.width * .50,
+                      // height: MediaQuery.of(context).size.height * .55,
+                      // width: MediaQuery.of(context).size.width * .50,
+                      height: 450,
+                      width: 750,
                       child: Image.asset(
                         'assets/image/dashboard.png',
                         fit: BoxFit.cover,
@@ -308,7 +311,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 Text('© 2024 All rights reserved'),
               ],
-            )
+            ),
           ],
         ),
       ),

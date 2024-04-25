@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/signIn/logIn.dart';
+import 'package:intern_project/view/screens/signIn/register.dart';
 import 'package:intern_project/view/util/colors.dart';
 
-class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+class CreateNewAccPage extends StatefulWidget {
+  const CreateNewAccPage({super.key});
 
   @override
-  State<ProfilePage> createState() => _ProfilePageState();
+  State<CreateNewAccPage> createState() => _CreateNewAccPageState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _CreateNewAccPageState extends State<CreateNewAccPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,9 +49,9 @@ class _ProfilePageState extends State<ProfilePage> {
                           height: 15,
                         ),
                         Text(
-                          "Fully scalable with regard to the connected\n"
-                          "devices and to the software's function to\n"
-                          "meet current and future needs.",
+                          "Expandable from the basic monitoring\n"
+                          "application to a fully customized enterprise\n"
+                          "management system",
                           style: TextStyle(
                               fontWeight: FontWeight.w300,
                               fontSize: 16,
@@ -72,6 +72,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: ClipRRect(
                       clipBehavior: Clip.hardEdge,
                       child: Image.asset('assets/image/working.png'),
+
+                      // child: Image.asset('assets/image/employee.png'),
                     ),
                   ),
                 ),
@@ -82,7 +84,7 @@ class _ProfilePageState extends State<ProfilePage> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width * 0.5,
             color: blueMint,
-            child: LoginPage(),
+            child: RegisterPage(),
           ),
         ],
       ),

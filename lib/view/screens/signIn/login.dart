@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:intern_project/view/screens/signIn/createNewACC.dart';
+import 'package:intern_project/view/screens/welcome.dart';
 import 'package:intern_project/view/widgets/smallButton.dart';
 import '../../util/colors.dart';
 
@@ -37,7 +39,14 @@ class _LoginPageState extends State<LoginPage> {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => WelcomePage(),
+                ),
+              );
+            },
             icon: Icon(
               Icons.arrow_back,
               color: navyBlue,
@@ -235,10 +244,12 @@ class _LoginPageState extends State<LoginPage> {
                         Text("Don't have an account? "),
                         InkWell(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => CreateAccountPage()));
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => CreateNewAccPage(),
+                              ),
+                            );
                           },
                           child: Text(
                             "Sign up",

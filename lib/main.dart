@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/signIn/profile.dart';
+import 'package:intern_project/view/screens/signIn/createNewACC.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Rubik',
       ),
-      home: ProfilePage(),
+      home: CreateNewAccPage(),
     );
   }
 }

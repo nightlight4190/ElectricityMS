@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intern_project/view/screens/signIn/createNewACC.dart';
+import 'package:intern_project/view/screens/signIn/profile.dart';
 import 'package:intern_project/view/util/colors.dart';
 import 'package:intern_project/view/util/language.dart';
 import 'package:intern_project/view/widgets/smallButton.dart';
@@ -142,7 +144,14 @@ class _WelcomePageState extends State<WelcomePage> {
                     ),
                     InkWell(
                       borderRadius: BorderRadius.circular(20),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ProfilePage(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Sign in',
                         style: textStyle2,
@@ -154,7 +163,12 @@ class _WelcomePageState extends State<WelcomePage> {
                     InkWell(
                       borderRadius: BorderRadius.circular(20),
                       onTap: () {
-                        // Handle onTap
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CreateNewAccPage(),
+                          ),
+                        );
                       },
                       child: Container(
                         height: 40,

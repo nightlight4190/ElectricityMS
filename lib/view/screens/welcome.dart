@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intern_project/view/screens/dashboard/dashBoard.dart';
 import 'package:intern_project/view/screens/signIn/createNewACC.dart';
 import 'package:intern_project/view/screens/signIn/profile.dart';
 import 'package:intern_project/view/util/colors.dart';
@@ -256,7 +257,14 @@ class _WelcomePageState extends State<WelcomePage> {
                           children: [
                             InkWell(
                               borderRadius: BorderRadius.circular(20),
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => DashBoardPage(),
+                                  ),
+                                );
+                              },
                               child: smallButton(
                                 btnName: 'GET STARTED',
                                 width: 120,

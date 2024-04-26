@@ -71,9 +71,7 @@ class _CreateNewAccPageState extends State<CreateNewAccPage> {
                     width: MediaQuery.of(context).size.width * 0.6,
                     child: ClipRRect(
                       clipBehavior: Clip.hardEdge,
-                      child: Image.asset('assets/image/working.png'),
-
-                      // child: Image.asset('assets/image/employee.png'),
+                      child: Image.asset('assets/image/employee.png'),
                     ),
                   ),
                 ),

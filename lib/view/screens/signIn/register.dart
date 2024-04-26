@@ -64,7 +64,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Column(
                   children: [
                     Text(
-                      "Sign in to EMS",
+                      "Sign up to EMS",
                       style: TextStyle(
                         fontSize: 40,
                         color: navyBlue,

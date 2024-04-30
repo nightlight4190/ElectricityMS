@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/signIn/profile.dart';
-import 'package:intern_project/view/util/colors.dart';
-import 'package:intern_project/view/widgets/smallButton.dart';
+import 'package:intern_project/user/view/screens/signIn/profile.dart';
+import 'package:intern_project/user/view/util/colors.dart';
+import 'package:intern_project/user/view/widgets/smallButton.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/dashboard/dashBoard.dart';
-import 'package:intern_project/view/screens/signIn/createNewACC.dart';
-import 'package:intern_project/view/screens/signIn/profile.dart';
-import 'package:intern_project/view/util/colors.dart';
-import 'package:intern_project/view/util/language.dart';
-import 'package:intern_project/view/widgets/smallButton.dart';
+import 'package:intern_project/user/view/screens/dashboard/dashBoard.dart';
+import 'package:intern_project/user/view/screens/signIn/createNewACC.dart';
+import 'package:intern_project/user/view/screens/signIn/profile.dart';
+import 'package:intern_project/user/view/util/colors.dart';
+import 'package:intern_project/user/view/util/language.dart';
+import 'package:intern_project/user/view/widgets/smallButton.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});

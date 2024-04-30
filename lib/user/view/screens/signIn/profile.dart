@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/signIn/register.dart';
-import 'package:intern_project/view/util/colors.dart';
+import 'package:intern_project/user/view/screens/signIn/logIn.dart';
+import 'package:intern_project/user/view/util/colors.dart';
 
-class CreateNewAccPage extends StatefulWidget {
-  const CreateNewAccPage({super.key});
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({super.key});
 
   @override
-  State<CreateNewAccPage> createState() => _CreateNewAccPageState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _CreateNewAccPageState extends State<CreateNewAccPage> {
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,9 +49,9 @@ class _CreateNewAccPageState extends State<CreateNewAccPage> {
                           height: 15,
                         ),
                         Text(
-                          "Expandable from the basic monitoring\n"
-                          "application to a fully customized enterprise\n"
-                          "management system",
+                          "Fully scalable with regard to the connected\n"
+                          "devices and to the software's function to\n"
+                          "meet current and future needs.",
                           style: TextStyle(
                               fontWeight: FontWeight.w300,
                               fontSize: 16,
@@ -71,7 +71,7 @@ class _CreateNewAccPageState extends State<CreateNewAccPage> {
                     width: MediaQuery.of(context).size.width * 0.6,
                     child: ClipRRect(
                       clipBehavior: Clip.hardEdge,
-                      child: Image.asset('assets/image/employee.png'),
+                      child: Image.asset('assets/image/working.png'),
                     ),
                   ),
                 ),
@@ -82,7 +82,7 @@ class _CreateNewAccPageState extends State<CreateNewAccPage> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width * 0.5,
             color: blueMint,
-            child: RegisterPage(),
+            child: LoginPage(),
           ),
         ],
       ),

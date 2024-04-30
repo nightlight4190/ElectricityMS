@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/screens/signIn/createNewACC.dart';
+import 'package:intern_project/user/view/screens/signIn/createNewACC.dart';
 
 void main() {
   runApp(const MyApp());

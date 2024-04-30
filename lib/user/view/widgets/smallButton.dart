@@ -1,6 +1,6 @@
 // ignore: must_be_immutable
 import 'package:flutter/material.dart';
-import 'package:intern_project/view/util/colors.dart';
+import 'package:intern_project/user/view/util/colors.dart';
 
 // ignore: must_be_immutable
 class smallButton extends StatelessWidget {

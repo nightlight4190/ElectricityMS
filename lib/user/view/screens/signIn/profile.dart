@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intern_project/user/view/screens/signIn/logIn.dart';
-import 'package:intern_project/user/view/util/colors.dart';
+import 'package:intern_project/util/colors.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

@@ -14,10 +14,8 @@ class AdminSettings extends StatelessWidget {
             children: [
               Container(
                 height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width * 0.2,
-                decoration: BoxDecoration(
-                  color: babyBlue,
-                ),
+                width: MediaQuery.of(context).size.width * 0.18,
+                decoration: BoxDecoration(),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child: Column(
@@ -71,9 +69,9 @@ class AdminSettings extends StatelessWidget {
                           color: Colors.black54,
                         ),
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 25),
                       Container(
-                        height: MediaQuery.of(context).size.height * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.6,
                         width: MediaQuery.of(context).size.width * 0.15,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,15 +85,57 @@ class AdminSettings extends StatelessWidget {
                               ),
                             ),
                             Divider(color: Colors.black12),
-                            SizedBox(height: 10),
+                            SizedBox(height: 20),
                             IconWithText(
                               icon: Icons.business_center_outlined,
                               text: 'Administration',
                             ),
                             SizedBox(height: 20),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                IconWithText(
+                                  icon: Icons.notifications_outlined,
+                                  text: 'Notifications',
+                                ),
+                                SizedBox(width: 20),
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 10,
+                                  child: Text(
+                                    "3",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Spacer(),
+                            Text(
+                              "Insight",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.black54,
+                              ),
+                            ),
+                            Divider(color: Colors.black12),
+                            SizedBox(height: 20),
                             IconWithText(
-                              icon: Icons.notifications_outlined,
-                              text: 'Notifications',
+                              icon: Icons.help_outline,
+                              text: 'Help',
+                            ),
+                            SizedBox(height: 20),
+                            IconWithText(
+                              icon: Icons.settings_outlined,
+                              text: 'Settings',
+                            ),
+                            SizedBox(height: 20),
+                            IconWithText(
+                              icon: Icons.logout_rounded,
+                              text: 'Logout',
                             ),
                           ],
                         ),
@@ -105,6 +145,12 @@ class AdminSettings extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width * 0.82,
+            color: blueMint,
+            // child: , TODO
           ),
         ],
       ),

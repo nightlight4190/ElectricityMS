@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AddUser extends StatelessWidget {
-  const AddUser({super.key});
-
+class LogOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Center(
+      child: Text(' LogOut'),
+    );
   }
 }

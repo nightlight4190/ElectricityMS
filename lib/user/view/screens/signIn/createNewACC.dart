@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intern_project/user/view/screens/signIn/register.dart';
-import 'package:intern_project/user/view/util/colors.dart';
+import 'package:intern_project/util/colors.dart';
 
 class CreateNewAccPage extends StatefulWidget {
   const CreateNewAccPage({super.key});

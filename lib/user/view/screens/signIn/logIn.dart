@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:intern_project/user/view/screens/signIn/createNewACC.dart';
-import 'package:intern_project/user/view/screens/welcome.dart';
+import 'package:intern_project/welcome.dart';
 import 'package:intern_project/user/view/widgets/smallButton.dart';
-import '../../util/colors.dart';
+import '../../../../util/colors.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

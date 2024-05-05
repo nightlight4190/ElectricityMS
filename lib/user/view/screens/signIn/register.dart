@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:intern_project/user/view/screens/signIn/profile.dart';
-import 'package:intern_project/user/view/util/colors.dart';
+import 'package:intern_project/util/colors.dart';
 import 'package:intern_project/user/view/widgets/smallButton.dart';
 
 class RegisterPage extends StatefulWidget {
